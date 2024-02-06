@@ -1,0 +1,17 @@
+{
+  "python.analysis.typeCheckingMode": "basic",
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "postgres_cnx",
+      "group": "postgres_grp",
+      "database": "website_db",
+      "username": "postgres"
+    }
+  ],
+  "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
+  "python.analysis.autoImportCompletions": true
+}

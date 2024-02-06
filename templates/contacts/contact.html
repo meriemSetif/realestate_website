@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">                            
+    {% if contacts %}
+    {% for contact in contacts %}
+        <div class="card rounded-3 w-50 my-3 mx-auto">
+            <div class="card-header bg-primary text-light"><h2>{{contact.listing.title}}</h2></div>
+            <div class="card-body">
+                <h3 class="card-title text-secondary"><small>by: <i>{{contact.user.username}}</i></small></h3>
+                <p class="card-text text-muted"><strong>message:</strong> <br> {{contact.message}}</p>
+            </div>
+            <div class="card-footer bg-primary text-light"><small>at: {{contact.contact_date}}</small></div>
+        </div>
+
+        
+    {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}
