@@ -82,11 +82,8 @@ WSGI_APPLICATION = "realestate_proj.wsgi.application"
 # don't forget to install psycopg2 and psycopg2-binary package drivers for postgress db
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "websitedb",
-        "USER": "postgres",
-        "PASSWORD": "system",
-        "HOST": "localhost",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
