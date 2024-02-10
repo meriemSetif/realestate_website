@@ -1,10 +1,10 @@
 from django.db import models
-from instructors.models import Instructor
+from realtors.models import realtor
 
 
 # Create your models here.
 class Listing(models.Model):
-    instructor = models.ForeignKey(Instructor, on_delete=models.DO_NOTHING)
+    realtor = models.ForeignKey(realtor, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=35)
     city = models.CharField(max_length=35)
     address = models.CharField(max_length=35)

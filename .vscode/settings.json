@@ -6,9 +6,9 @@
       "server": "localhost",
       "port": 5432,
       "driver": "PostgreSQL",
-      "name": "postgres_cnx",
-      "group": "postgres_grp",
-      "database": "website_db",
+      "name": "postgres-cnx",
+      "group": "postgres-group",
+      "database": "websitedb",
       "username": "postgres"
     }
   ],

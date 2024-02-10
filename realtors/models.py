@@ -2,7 +2,7 @@ from django.db import models
 
 
 # Create your models here.
-class Instructor(models.Model):
+class realtor(models.Model):
     name = models.CharField(max_length=35)
     photo = models.ImageField(upload_to="photos/%Y/%m/%d", blank=True)
     email = models.EmailField(blank=True)

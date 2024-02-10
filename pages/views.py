@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from listings.models import Listing
 from listings.choices import bedrooms_choices, prices_choices, states_choices
-from instructors.models import Instructor
+from realtors.models import realtor
 
 
 # Create your views here.
@@ -19,10 +19,10 @@ def index(request):
 
 
 def about(request):
-    realtors = Instructor.objects.all()
-    best_seller = Instructor.objects.order_by("-id").filter(is_mvp=True)
+    realtors = realtor.objects.all()
+    best_seller = realtor.objects.order_by("-id").filter(is_mvp=True)
     context = {
-        "instructors": realtors,
+        "realtors": realtors,
         "best_seller": best_seller[0] if best_seller else "",
     }
     return render(request, "pages/about.html", context)

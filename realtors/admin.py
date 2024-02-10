@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Instructor
+from .models import realtor
 
 
 # Register your models here.
-class InstructorAdmin(admin.ModelAdmin):
+class realtorAdmin(admin.ModelAdmin):
     list_display = ("id", "name", "photo", "email", "is_mvp")
     list_display_links = ("id", "email")
     list_editable = ("name", "is_mvp")
@@ -12,4 +12,4 @@ class InstructorAdmin(admin.ModelAdmin):
 
 
 
-admin.site.register(Instructor, InstructorAdmin)
+admin.site.register(realtor, realtorAdmin)

@@ -33,7 +33,7 @@ def contact(request):
                 f"Property listing inquiry",
                 f"there has been query about {listing} sign in the panel for more info",
                 f"yahialinus21alg@gmail.com",
-                [f"{listing.instructor.email}"],
+                [f"{listing.realtor.email}"],
             )
         )
 
@@ -41,7 +41,7 @@ def contact(request):
             proxy_email_address = "yahialinus21alg@gmail.com"
             proxy_email_password = "qxnx wwlu ehuj kjtg"  # Use the App Password you generated
             pprint(connection.login(proxy_email_address, proxy_email_password))
-            connection.sendmail(proxy_email_address, listing.instructor.email,
+            connection.sendmail(proxy_email_address, listing.realtor.email,
                                 f'Subject:inquiry about listing {listing}\n\n{message} by {user.email}')
 
         return redirect("dashboard")

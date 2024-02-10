@@ -162,7 +162,7 @@
               </li>
               <li class="list-group-item text-secondary">
                 <i class="fas fa-bed"></i> Realtor:
-                <span class="float-right">{{listing.instructor}} </span>
+                <span class="float-right">{{listing.realtor}} </span>
               </li>
             </ul>
           </div>
@@ -177,12 +177,12 @@
         <div class="card mb-3">
           <img
             class="card-img-top"
-            src="{{ listing.instructor.photo.url }}"
+            src="{{ listing.realtor.photo.url }}"
             alt="Seller of the month"
           />
           <div class="card-body">
             <h5 class="card-title">Property Realtor</h5>
-            <h6 class="text-secondary">{{listing.instructor}}</h6>
+            <h6 class="text-secondary">{{listing.realtor}}</h6>
           </div>
         </div>
         <button
@@ -251,7 +251,7 @@
             <label for="emailto" class="col-form-label">Email (Realtor):</label>
             <input type="email" name="emailto" class="form-control" required 
             {% if user.is_authenticated %}
-            value=" {{ listing.instructor.email }} "
+            value=" {{ listing.realtor.email }} "
             {% else %}
             placeholder="register/log-in for performing this action"
             disabled

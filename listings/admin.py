@@ -10,7 +10,7 @@ class ListingAdmin(admin.ModelAdmin):
         "is_published",
         "price",
         "list_date",
-        "instructor",
+        "realtor",
     )
     list_display_links = (
         "id",

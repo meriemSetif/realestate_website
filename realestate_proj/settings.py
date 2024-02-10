@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-e(qy@)@4!z_$^jvamb1nk7ul#1()x*8*jrs*7wxu2364z!d86e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     "listings.apps.ListingsConfig",
     "accounts.apps.AccountsConfig",
     "contacts.apps.ContactsConfig",
-    "instructors.apps.InstructorsConfig",
+    "realtors.apps.realtorsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -83,7 +83,7 @@ WSGI_APPLICATION = "realestate_proj.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "website_db",
+        "NAME": "websitedb",
         "USER": "postgres",
         "PASSWORD": "system",
         "HOST": "localhost",
