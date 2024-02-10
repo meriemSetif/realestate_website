@@ -1,5 +1,5 @@
 """
-ASGI config for academy_courses project.
+ASGI config for realestate_proj project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'academy_courses.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'realestate_proj.settings')
 
 application = get_asgi_application()

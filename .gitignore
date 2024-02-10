@@ -8,3 +8,6 @@ venv
 __pycache__/
 db.sqlite3
 local_setting.py
+database.mdj
+database_schema/
+.gitignore
